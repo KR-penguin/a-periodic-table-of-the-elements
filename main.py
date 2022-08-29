@@ -2,6 +2,7 @@
 # made by kopeng
 # 플래이 해주셔서 감사합니다!
 
+
 import time
 import random
 
@@ -56,7 +57,7 @@ def game():
 
             print("\n\nGame Clear! 축하합니다!")
             print("누적 점수 : ", score)
-            exit()
+            input("")
 
         else:
             start = time.time()
@@ -80,7 +81,7 @@ def game():
                 print("\n속도 : ", et, "초")
                 continue
             else:
-                print("오답입니다..\n")
+                print("\n오답입니다..\n")
                 score = score - 30
                 chance = chance - 1
                 print("현재 점수 : ", score)
@@ -93,6 +94,7 @@ def game():
         
     print("\n\nGame Over...")
     print("누적 점수 : ", score)
+    input("")
 
 
 ready_game()
